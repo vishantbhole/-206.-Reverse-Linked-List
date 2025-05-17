@@ -14,3 +14,11 @@ class Solution:
             prev = curr
             curr = nxt
         return prev
+
+# Helper function to print linked list
+def print_linked_list(head):
+    result = []
+    while head:
+        result.append(str(head.val))
+        head = head.next
+    print(" -> ".join(result))
